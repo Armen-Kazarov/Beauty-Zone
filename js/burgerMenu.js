@@ -3,7 +3,10 @@
 function burgerMenu() {
   const iconMenu = document.querySelector('.menu__icon');
   const menuBody = document.querySelector('.menu__body');
-
+  const menuItems = document.querySelectorAll('.header-nav-menu-list-item');
+ 
+  console.log(menuItems)
+  
   // Burger menu
   if (iconMenu) {
     iconMenu.addEventListener("click", function (e) {
@@ -12,6 +15,19 @@ function burgerMenu() {
       menuBody.classList.toggle('_active');
     });
   }
+
+  for (let item of menuItems) {
+    console.log(item);
+    if (item) {
+      item.addEventListener("click", function (e) {
+        document.body.classList.toggle('_lock');
+        iconMenu.classList.toggle('_active');
+        menuBody.classList.toggle('_active');
+      });
+      console.log(item);
+    }
+  }
+  
 
   // Scroll on click
   const menuLinks = document.querySelectorAll('.menu__link[data-goto]');

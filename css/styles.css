@@ -985,6 +985,7 @@ html {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+
   }
 
   .popup-form-text {
@@ -1135,19 +1136,6 @@ html {
     margin-top: 4px;
   }
 
-  /* .popup-form-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  .popup-form-subtitle {
-    font-size: 16px;
-  }
-
-  .popup-form-btn {
-    font-size: 14px;
-  } */
-
   .section-title {
     font-size: 32px;
   }
@@ -1187,35 +1175,42 @@ html {
     font-size: 16px;
   }
 
-  /* .lightbox .lightbox__form {
-    padding-left: 20px;
-    padding-right: 20px;
+  .lightbox .lightbox__form {
+    padding: 22px 12px;
   }
 
-  .popup-form-title {
-    font-size: 22px;
-    margin-bottom: 16px;
+  .close-lightbox {
+    width: 20px;
   }
 
-  .popup-form-subtitle {
+  .lightbox .popup-form-title {
     font-size: 12px;
+    margin-bottom: 14px;
   }
 
-  .popup-form-input {
-    font-size: 10px;
+  .lightbox .popup-form-subtitle {
+    font-size: 8px;
   }
 
-  .popup-form-btn {
-    padding: 14px 16px;
-    font-size: 14px;
+  .lightbox .popup-form-input {
+    font-size: 8px;
   }
 
-  .popup-form-text {
-    font-size: 10px;
-    line-height: 1.4;
-  } */
+  .lightbox .popup-form-input::placeholder {
+    font-size: 8px;
+  }
 
-  .lightbox__button {
+  .lightbox .popup-form-btn {
+    font-size: 9px;
+    padding: 10px 4px;
+  }
+
+  .lightbox .popup-form-text {
+    font-size: 8px;
+  }
+  
+  .lightbox .lightbox__button {
+    width: 20px;
     top: 16px;
     right: 14px;
   }

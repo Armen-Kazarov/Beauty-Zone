@@ -956,31 +956,31 @@ html {
     right: 10px;
   }
  
-  .lightbox__form {
+  .lightbox .lightbox__form {
     padding-left: 26px;
     padding-right: 26px;
   }
 
-  .popup-form-title {
+  .lightbox .popup-form-title {
     font-size: 18px;
     margin-bottom: 18px;
   }
 
-  .popup-form-subtitle {
+  .lightbox .popup-form-subtitle {
     font-size: 10px;
     margin-bottom: 22px;
   }
 
-  .popup-form-input {
+  .lightbox .popup-form-input {
     padding: 12px 14px;
     font-size: 10px;
   }
 
-  .popup-form-input::placeholder {
+  .lightbox .popup-form-input::placeholder {
     font-size: 10px;
   }
 
-  .popup-form-btn {
+  .lightbox .popup-form-btn {
     font-size: 10px;
     width: 100%;
     padding-right: 10px;
@@ -988,7 +988,7 @@ html {
 
   }
 
-  .popup-form-text {
+  .lightbox .popup-form-text {
     font-size: 8px;
     line-height: 1.4;
   }

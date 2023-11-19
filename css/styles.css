@@ -40,7 +40,9 @@ html {
 
 .custom-container {
   margin: 0 auto;
-  max-width: 1240px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 100px;
 }
 
 .flex-container {
@@ -53,7 +55,7 @@ html {
 
 /*swiper*/
 .swiper {
-  width: 87%;
+  width: 85%;
   height: 100%;
 }
 
@@ -111,10 +113,10 @@ html {
 
 .slider-buttons-wrapper {
   position: absolute;
-    width: 100%;
+    width: 84%;
     z-index: 10;
     top: 55%;
-    left: 0;
+    left: 8%;
 }
 
 .swiper-button-prev:after,
@@ -703,11 +705,13 @@ html {
   display: none;
 }
 
-@media (max-width: 1200px) {
-  .custom-container {
-   max-width: 1000px;
+@media(min-width: 1025px) {
+  html {
+    overflow-y: scroll;
   }
+}
 
+@media (max-width: 1200px) {
   .header-nav-menu-contacts-list {
     margin-left: 80px;
   }
@@ -723,7 +727,8 @@ html {
 
 @media (max-width: 1024px) {
   .custom-container {
-    max-width: 954px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .header {
@@ -738,6 +743,11 @@ html {
     align-items: center;
     position: relative;
     justify-content: space-between;
+  }
+
+  .slider-buttons-wrapper {
+    width: 90%;
+    left: 5%;
   }
 
   .footer-nav-menu-social-contacts-list-laptop {
@@ -835,6 +845,7 @@ html {
   .menu__body._active {
     left: 0;
   }
+  /* end burger menu */
 
   .header-nav-menu-list {
     font-size: 14px;
@@ -874,11 +885,6 @@ html {
 }
 
 @media (max-width: 991px) {
-  .custom-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .hero-section {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -951,6 +957,15 @@ html {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    background-position: 60% 87%;
+  }
+  
+  .custom-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
   .lightbox__content {
     padding: 20% 20%;
   }
@@ -1017,6 +1032,16 @@ html {
   .why-we-list-item:not(:nth-last-of-type(1)) {
     margin-bottom: 16px;
     margin-right: 0;
+  }
+
+  .slider-buttons-wrapper {
+    display: none;
+  }
+
+  .slide-text {
+    left: auto;
+    font-size: 20px;
+    line-height: 1.15;
   }
 
   .contacts-section {
@@ -1087,22 +1112,6 @@ html {
   .footer-copyright-text {
     margin-top: 0;
     order: 3;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-section {
-    background-position: 60% 87%;
-  }
-
-  .slider-buttons-wrapper {
-    display: none;
-  }
-
-  .slide-text {
-    left: auto;
-    font-size: 20px;
-    line-height: 1.15;
   }
 }
 

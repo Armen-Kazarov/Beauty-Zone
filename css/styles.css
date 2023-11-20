@@ -1128,6 +1128,11 @@ html {
     padding-left: 24px;
   }
 
+  .contacts-section-form-btn {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   .request-call-btn {
     font-size: 16px;
   }

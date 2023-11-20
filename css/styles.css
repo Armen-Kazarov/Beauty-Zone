@@ -198,10 +198,7 @@ html {
 .header-nav-menu-list {
   display: flex;
   font-size: 18px;
-}
-
-.header-nav-menu-list-item:not(:nth-last-of-type(1)) {
-  padding-right: 36px;
+  gap: 56px;
 }
 
 .header-nav-menu-contacts-list {
@@ -523,6 +520,7 @@ html {
 
 .why-we-list-items {
   display: flex;
+  gap: 56px;
   color: #000;
   text-align: center;
   font-family: var(--main-font);
@@ -541,10 +539,6 @@ html {
   padding: 24px 32px;
 }
 
-.why-we-list-item:not(:nth-last-of-type(1)) {
-  margin-right: 56px;
-}
-
 /* contacts-section */
 .contacts-section {
   padding-top: 96px;
@@ -554,15 +548,16 @@ html {
 .contacts-section-content-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 32px;
 }
 
 .map-wrapper {
   border-radius: 32px;
-  margin-right: 32px;
 }
 
 .map-wrapper iframe {
   border-radius: 32px;
+  max-width: 600px;
   height: 100%;
 }
 
@@ -711,9 +706,15 @@ html {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .header-nav-menu-contacts-list {
-    margin-left: 80px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-nav-menu-list {
+    gap: 30px;
   }
   
   .star-3 {
@@ -721,7 +722,7 @@ html {
   }
 
   .map-wrapper iframe {
-    width: 500px;
+    max-width: 470px;
   }
 }
 
@@ -848,6 +849,7 @@ html {
   /* end burger menu */
 
   .header-nav-menu-list {
+    gap: 0;
     font-size: 14px;
     flex-direction: column;
   }
@@ -860,7 +862,6 @@ html {
   }
 
   .header-nav-menu-list-item {
-    padding-right: 0;
     margin-bottom: 16px;
   }
 
@@ -937,22 +938,16 @@ html {
   .why-we-list-items {
     font-size: 14px;
     line-height: 1.4;
-  }
-
-  .why-we-list-item:not(:nth-last-of-type(1)) {
-    margin-right: 32px;
+    gap: 32px;
   }
 
   .contacts-section-content-wrapper {
     justify-content: center;
-  }
-
-  .map-wrapper {
-    margin-right: 14px;
+    gap: 14px;
   }
 
   .map-wrapper iframe {
-    width: 350px;
+    max-width: 340px;
   }
 }
 
@@ -1020,18 +1015,13 @@ html {
 
   .why-we-list-items {
     flex-direction: column;
+    gap: 16px;
     font-size: 18px;
     line-height: 1.3; 
   }
 
   .why-we-list-item {
-    margin-right: 0;
     flex-direction: column;
-  }
-
-  .why-we-list-item:not(:nth-last-of-type(1)) {
-    margin-bottom: 16px;
-    margin-right: 0;
   }
 
   .slider-buttons-wrapper {
@@ -1060,6 +1050,7 @@ html {
 
   .map-wrapper iframe {
     border: 0;
+    max-width: 100%;
     width: 100%;
     height: 232px;
     border-radius: 0;

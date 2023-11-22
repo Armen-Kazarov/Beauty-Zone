@@ -708,10 +708,14 @@ html {
   fill: var(--primary-main-color-lighter);
 }
 
-.footer-img-wrapper {
+.footer::after {
+  content: '';
   position: absolute;
   right: 0;
   bottom: 0;
+  background: url("../images/footer/image.png") top/cover no-repeat;
+  width: 247px;
+  height: 152px;
 }
 
 .footer-nav-menu-social-contacts-list-tablet {
@@ -780,6 +784,10 @@ html {
 
   .footer-nav-menu-social-contacts-list-item-tablet:not(:nth-last-of-type(1)) {
     margin-right: 24px;
+  }
+
+  .footer::after {
+    display: none;
   }
 
   /* start burger menu */
@@ -896,10 +904,6 @@ html {
     position: absolute;
     top: 16px;
     left: 4%;
-  }
-
-  .footer-img-wrapper {
-    display: none;
   }
 }
 

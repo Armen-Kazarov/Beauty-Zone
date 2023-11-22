@@ -646,6 +646,10 @@ html {
   justify-content: space-between;
 }
 
+.footer-logo {
+  display: inline-block;
+}
+
 .footer-nav-menu {
   display: flex;
   justify-content: space-between;

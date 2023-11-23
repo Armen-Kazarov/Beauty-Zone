@@ -134,12 +134,7 @@ html {
   border: 1px solid var(--primary-main-color-dark);
   border-radius: 100%;
   fill: var(--primary-main-color-dark);
-  transition: all 0.2s linear;
-}
-
-.swiper-button-prev
-.swiper-button-next {
-  text-align: center;
+  transition: background-color 0.2s linear, border-color 0.2s linear, fill 0.2s linear;
 }
 
 .swiper-button-prev:hover,
@@ -147,7 +142,12 @@ html {
   fill: var(--primary-main-color-lighter);
   background-color: var(--primary-main-color-light);
   border-color: var(--primary-main-color-light);
-  transition: all 0.2s linear;
+  transition: background-color 0.2s linear, border-color 0.2s linear, fill 0.2s linear;
+}
+
+.swiper-button-prev
+.swiper-button-next {
+  text-align: center;
 }
 
 .swiper-pagination {
@@ -213,14 +213,13 @@ html {
 
 .header-menu-list-item-link-color {
   color: var(--primary-main-color-dark);
-  transition: text-shadow 0.2s linear;
+  transition: text-shadow 0.2s linear, color 0.2s linear;
 }
 
 .header-menu-list-item-link-color:hover,
 .header-menu-list-item-link-color:active  {
   text-shadow: .6px 0px 0px var(--primary-main-color-light), -.6px 0px 0px var(--primary-main-color-light);
   color: var(--primary-main-color-light);
-  transition: text-shadow 0.2s linear;
 }
 
 .header-contact-icon {
@@ -234,7 +233,6 @@ html {
 .contacts-list-item:hover
 .contact-icon-hover {
   fill: var(--primary-main-color-light);
-  transition: fill 0.2s linear;
 }
 
 .header-contacts-list-item:not(:nth-last-of-type(1)) {
@@ -328,7 +326,6 @@ html {
 .request-call-btn:hover {
   background-color: transparent;
   color: var(--primary-main-color-dark);
-  transition: all 0.2s linear;
 }
 
 .hero-text {
@@ -608,7 +605,6 @@ html {
 .contacts-section-form-input:focus,
 .contacts-section-form-input:focus {
   background-color: var(--secondary-normal-color);
-  transition: background-color 0.2s linear;
 }
 
 .contacts-section-form-btn {
@@ -656,6 +652,8 @@ html {
   width: 67%;
 }
 
+
+
 .footer-menu-list-item-link-color,
 .footer-nav-menu-contacts-list-item-link,
 .footer-privacy-policy-link {
@@ -667,8 +665,7 @@ html {
 .footer-nav-menu-contacts-list-item:hover
 .footer-nav-menu-contacts-list-item-link,
 .footer-privacy-policy-link:hover {
-  transition: color 0.2s linear;
-  color: #4784e0;
+  color: var(--primary-main-color-light);
 }
 
 .footer-nav-menu-list-item:not(:nth-last-of-type(1)),

@@ -95,49 +95,53 @@
               Запишись та отримай безкоштовну<br> консультацію нашого косметолога
             </p>
             <div class="lightbox js-lightbox">
-              <div class="lightbox__overlay"></div>
-              <div class="lightbox__content">
-                <form name="registration_form" action="#" class="contacts-section-form lightbox__form">
-                  <button type="button" class="lightbox__button" data-action="close-lightbox">
-                    <img src="./images/popup/cross.svg" alt="a white cross">
-                  </button>
-                  <h2 class="popup-form-title">
-                    Замовити <br>дзвінок
-                  </h2>
-                  <h3 class="contacts-section-form-title popup-form-subtitle">
-                    Запишіться <span class="highlighted-title-text">безкоштовно</span> <br>та отримайте подарунок
-                  </h3>
-                  <input 
-                    class="contacts-section-form-input popup-form-input"
-                    type="text" name="username-surname"
-                    placeholder="Ваше ім'я та прізвище"
-                    required
-                    minlength="2"
-                    pattern="^[A-Za-zА-Яа-яёЁЇїІіЄєҐґ]+\s[A-Za-zА-Яа-яёЁЇїІіЄєҐґ]+$">
-                  <input
-                    class="contacts-section-form-input popup-form-input"
-                    type="tel"
-                    name="tel"
-                    placeholder="Ваш номер телефону"
-                    required
-                    pattern="^\+[0-9]{12}">
-                  <input 
-                    class="contacts-section-form-input popup-form-input"
-                    type="email"
-                    name="email"
-                    placeholder="Ваша електронна пошта"
-                    required>
-                  <button type="submit" class="btn contacts-section-form-btn popup-form-btn">
-                    Записатись безкоштовно
-                  </button>
-                  <p class="contacts-section-form-text popup-form-text">
-                    Натискаючи на кнопку я погоджуюсь <br>
-                    <a href="#" class="contacts-section-form-text-link privacy-policy-link">
-                      з політикою конфіденційності
-                    </a>
-                  </p>
-                </form>
-              </div>
+              <form name="registration_form" action="#" class="contacts-section-form popup-form">
+                <button type="button" class="popup-button" data-action="close-lightbox">
+                  <img src="./images/popup/cross.svg" alt="a white cross">
+                </button>
+                <h2 class="popup-form-title">
+                  Замовити <br>дзвінок
+                </h2>
+                <h3 class="contacts-section-form-title popup-form-subtitle">
+                  Запишіться <span class="highlighted-title-text">безкоштовно</span> <br>та отримайте подарунок
+                </h3>
+                <label for="username-surname" class="visually-hidden">Ваше ім'я та прізвище</label>
+                <input 
+                      id="username-surname"
+                      name="username-surname"       
+                      type="text"
+                      class="contacts-section-form-input"
+                      placeholder="Ваше ім'я та прізвище"
+                      minlength="2"
+                      pattern="^[A-Za-zА-Яа-яёЁЇїІіЄєҐґ]+\s[A-Za-zА-Яа-яёЁЇїІіЄєҐґ]+$"
+                      required>
+                <label for="tel" class="visually-hidden">Ваш номер телефону</label>
+                <input 
+                      id="tel"
+                      name="tel"
+                      type="tel"
+                      class="contacts-section-form-input"
+                      placeholder="Ваш номер телефону"
+                      pattern="^\+[0-9]{12}"
+                      required>
+                <label for="email" class="visually-hidden">Ваша електронна пошта</label>
+                <input 
+                      id="email"
+                      name="email"
+                      class="contacts-section-form-input"
+                      type="email"
+                      placeholder="Ваша електронна пошта"
+                      required>
+                <button type="submit" class="btn contacts-section-form-btn popup-form-btn">
+                  Записатись безкоштовно
+                </button>
+                <p class="contacts-section-form-text popup-form-text">
+                  Натискаючи на кнопку я погоджуюсь <br>
+                  <a href="#" class="contacts-section-form-text-link privacy-policy-link">
+                    з політикою конфіденційності
+                  </a>
+                </p>
+              </form>
             </div>
           </div>
         </div>
@@ -294,26 +298,33 @@
             <div class="map-wrapper">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.932390054501!2d30.515600375653104!3d50.44235998794743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1699365628704!5m2!1sru!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <form name="registration_form" action="#" class="contacts-section-form">
+            <form name="registration_form" action="#" class="contacts-section-form general-form-syles">
               <h3 class="contacts-section-form-title">
                 Запишіться <span class="highlighted-title-text">безкоштовно</span> <br>та отримайте подарунок
               </h3>
-              <input class="contacts-section-form-input"
+              <label for="username-surname" class="visually-hidden">Ваше ім'я та прізвище</label>
+              <input 
+                     id="username-surname"
+                     name="username-surname"       
                      type="text"
-                     name="username-surname"
+                     class="contacts-section-form-input"
                      placeholder="Ваше ім'я та прізвище"
-                     required
                      minlength="2"
-                     pattern="^[A-Za-zА-Яа-яёЁЇїІіЄєҐґ]+\s[A-Za-zА-Яа-яёЁЇїІіЄєҐґ]+$">
-              <input class="contacts-section-form-input"
-                     type="tel"
+                     pattern="^[A-Za-zА-Яа-яёЁЇїІіЄєҐґ]+\s[A-Za-zА-Яа-яёЁЇїІіЄєҐґ]+$"
+                     required>
+              <label for="tel" class="visually-hidden">Ваш номер телефону</label>
+              <input id="tel"
                      name="tel"
+                     type="tel"
+                     class="contacts-section-form-input"
                      placeholder="Ваш номер телефону"
-                     required
-                     pattern="^\+[0-9]{12}">
-              <input class="contacts-section-form-input"
-                     type="email"
+                     pattern="^\+[0-9]{12}"
+                     required>
+              <label for="email" class="visually-hidden">Ваш номер телефону</label>
+              <input id="email"
                      name="email"
+                     class="contacts-section-form-input"
+                     type="email"
                      placeholder="Ваша електронна пошта"
                      required>
               <button type="submit" class="btn contacts-section-form-btn">

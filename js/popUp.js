@@ -3,9 +3,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const popupForm = {
     modal: document.querySelector('.js-lightbox'),
-    lightboxForm: document.querySelector('.lightbox__form'),
+    lightboxForm: document.querySelector('.popup-form'),
     btnOpenModal: document.querySelector('.request-call-btn'),
-    btn: document.querySelector('.lightbox__button')
+    btn: document.querySelector('.popup-button')
   };
 
   const showModal = (event) => {

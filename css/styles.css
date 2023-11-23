@@ -639,7 +639,6 @@ html {
 .contacts-section-form-text-link {
   color: var(--secondary-normal-color);
   text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 /* footer */
